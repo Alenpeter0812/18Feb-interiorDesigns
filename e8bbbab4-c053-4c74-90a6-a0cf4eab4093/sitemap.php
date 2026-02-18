@@ -1,0 +1,66 @@
+<?php header("Content-Type: application/xml; charset=utf-8");
+$domain = isset($_SERVER["HTTPS"]) && $_SERVER["HTTPS"] === "on" ? "https" : "http";
+$domain .= "://".$_SERVER["HTTP_HOST"];
+echo str_replace("##SITE_DOMAIN##", $domain, '<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<url>
+<loc>##SITE_DOMAIN##/blog/charm-of-rustic-interiors.html</loc>
+<lastmod>2025-12-12T09:31:56+00:00</lastmod>
+<priority>0.90</priority>
+</url>
+<url>
+<loc>##SITE_DOMAIN##/blog/embrace-minimalism-contemporary-elegance.html</loc>
+<lastmod>2025-12-12T09:31:56+00:00</lastmod>
+<priority>0.90</priority>
+</url>
+<url>
+<loc>##SITE_DOMAIN##/blog</loc>
+<lastmod>2025-12-12T09:31:56+00:00</lastmod>
+<priority>1.00</priority>
+</url>
+<url>
+<loc>##SITE_DOMAIN##/blog/vintage-vibes-nostalgia-interior-design.html</loc>
+<lastmod>2025-12-12T09:31:56+00:00</lastmod>
+<priority>0.90</priority>
+</url>
+<url>
+<loc>##SITE_DOMAIN##/diy-aesthetic-projects.html</loc>
+<lastmod>2025-12-12T09:31:56+00:00</lastmod>
+<priority>0.90</priority>
+</url>
+<url>
+<loc>##SITE_DOMAIN##/harmony-in-space.html</loc>
+<lastmod>2025-12-12T09:31:56+00:00</lastmod>
+<priority>0.90</priority>
+</url>
+<url>
+<loc>##SITE_DOMAIN##/historical-influences.html</loc>
+<lastmod>2025-12-12T09:31:56+00:00</lastmod>
+<priority>0.90</priority>
+</url>
+<url>
+<loc>/</loc>
+<lastmod>2025-12-12T09:31:56+00:00</lastmod>
+<priority>1.00</priority>
+</url>
+<url>
+<loc>##SITE_DOMAIN##/privacy.html</loc>
+<lastmod>2025-12-12T09:31:56+00:00</lastmod>
+<priority>0.90</priority>
+</url>
+<url>
+<loc>##SITE_DOMAIN##/sign-in.html</loc>
+<lastmod>2025-12-12T09:31:56+00:00</lastmod>
+<priority>0.90</priority>
+</url>
+<url>
+<loc>##SITE_DOMAIN##/sign-up.html</loc>
+<lastmod>2025-12-12T09:31:56+00:00</lastmod>
+<priority>0.90</priority>
+</url>
+<url>
+<loc>##SITE_DOMAIN##/sustainable-living.html</loc>
+<lastmod>2025-12-12T09:31:56+00:00</lastmod>
+<priority>0.90</priority>
+</url>
+</urlset>');
